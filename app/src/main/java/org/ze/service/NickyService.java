@@ -27,6 +27,8 @@ public class NickyService extends Service {
 
     }
 
+
+
     @Override
     public void onDestroy() {
         handler.removeCallbacks(showTime);
@@ -44,7 +46,7 @@ public class NickyService extends Service {
             List<ActivityManager.RunningTaskInfo> apps = manager.getRunningTasks(20);
             // 顯示所有 running 服務列表
             //        showServiceList();
-            String a = apps.get(0).baseActivity.getPackageName();
+            String a = apps.get(0).topActivity.getPackageName();
             Log.e("aa",a);
             if(apps.size()>1) {
                 //                Log.e("1",apps.get(1).processName);
@@ -57,9 +59,9 @@ public class NickyService extends Service {
                     info += "当前任务状态的描述:" + task.description+ "\n";
                     info += "当前任务Id:" + task.id+ "\n";
                     info += "任务中所运行的Activity数量,包含已停止的:" + task.numActivities+ "\n";
-                    info += "任务中所运行的Activity数量,不包含已停止或不延续运行的:" + task.numRunning+ "\n";
+                    info += "任务中所运行的Activity数量,不包含已停止或不延续运行的:" + task.numRunning + "\n";
 //                    System.out.print(info);
-                    Log.e("bb", task.baseActivity.getClassName());
+                    Log.e("bb", task.topActivity.getClassName());
 
                 }
             }
