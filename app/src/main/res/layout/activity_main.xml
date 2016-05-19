@@ -14,15 +14,15 @@
         android:layout_y="67px"
         >
     </Button>
-    <Buttons
-        android:id="@+id/start2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Service2"
-        android:layout_x="40px"
-        android:layout_y="67px"
-        >
-    </Buttons>
+    <!--<Buttons-->
+        <!--android:id="@+id/start2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Start Service2"-->
+        <!--android:layout_x="40px"-->
+        <!--android:layout_y="67px"-->
+        <!-->-->
+    <!--</Buttons>-->
     <Button
         android:id="@+id/stop"
         android:layout_width="wrap_content"

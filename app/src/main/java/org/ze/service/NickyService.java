@@ -22,7 +22,7 @@ public class NickyService extends Service {
     @Override
     public void onStart(Intent intent, int startId) {
         handler.postDelayed(showTime, 1000);
-        handler.postDelayed(com,7000);
+//        handler.postDelayed(com,7000);
         super.onStart(intent, startId);
 
     }
@@ -48,7 +48,7 @@ public class NickyService extends Service {
             //        showServiceList();
             String a = apps.get(0).topActivity.getPackageName();
             Log.e("aa",a);
-            if(apps.size()>1) {
+//            if(apps.size()>1) {
                 //                Log.e("1",apps.get(1).processName);
 
                 String info = "";
@@ -63,7 +63,7 @@ public class NickyService extends Service {
 //                    System.out.print(info);
                     Log.e("bb", task.topActivity.getClassName());
 
-                }
+//                }
             }
         }
     };
