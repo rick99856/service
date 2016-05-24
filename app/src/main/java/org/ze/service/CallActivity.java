@@ -10,7 +10,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.InterstitialAd;
 
 public class CallActivity extends Activity {
     private Button startButton;
@@ -22,7 +21,6 @@ public class CallActivity extends Activity {
     static final String SYSTEM_HOME_KEY = "homekey";//home key
 
     private static final String TAG = "CallActivity";
-    private InterstitialAd mInterstitialAd;
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);

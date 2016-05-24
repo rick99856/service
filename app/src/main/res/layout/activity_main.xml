@@ -32,4 +32,8 @@
         android:layout_y="78dp"
         >
     </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/usage_stats"/>
 </AbsoluteLayout>

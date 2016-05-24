@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
         startButton1.setOnClickListener(start1ClickListener);
         stopButton.setOnClickListener(stopClickListener);
 
+
     }
 
     private Button.OnClickListener start1ClickListener = new Button.OnClickListener() {
