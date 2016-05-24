@@ -22,7 +22,7 @@ public class NickyService extends Service {
     @Override
     public void onStart(Intent intent, int startId) {
         handler.postDelayed(showTime, 1000);
-//        handler.postDelayed(com,7000);
+        handler.postDelayed(com,7000);
         super.onStart(intent, startId);
 
     }
@@ -71,7 +71,7 @@ public class NickyService extends Service {
         @Override
         public void run() {
             Intent intent = new Intent();
-            intent.setClass(getApplicationContext(), CallActivity.class);
+            intent.setClass(getApplicationContext(), CallActivity2.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
 

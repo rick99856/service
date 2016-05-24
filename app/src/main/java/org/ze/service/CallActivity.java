@@ -22,7 +22,6 @@ public class CallActivity extends Activity {
     static final String SYSTEM_HOME_KEY = "homekey";//home key
 
     private static final String TAG = "CallActivity";
-    private HomeWatcher mHomeWatcher;
     private InterstitialAd mInterstitialAd;
     @Override
     public void onCreate(Bundle icicle) {
@@ -35,26 +34,6 @@ public class CallActivity extends Activity {
         this.getWindow().setFlags(FLAG_HOMEKEY_DISPATCHED, FLAG_HOMEKEY_DISPATCHED);
 
         setContentView(R.layout.activity_main2);
-//        mHomeWatcher = new HomeWatcher(this);
-//        mHomeWatcher.setOnHomePressedListener(new HomeWatcher.OnHomePressedListener() {
-//            @Override
-//            public void onHomePressed() {
-//                Log.e(TAG, "onHomePressed");
-//                Toast.makeText(CallActivity.this, "你要接受懲罰喔~~ 不准走~~", Toast.LENGTH_LONG).show();
-//                Intent i = new Intent();
-//                i.setClass(CallActivity.this, CallActivity.class);
-//                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                startActivity(i);
-//                finish();
-//
-//            }
-//
-//            @Override
-//            public void onHomeLongPressed() {
-//                Log.e(TAG, "onHomeLongPressed");
-//            }
-//        });
-//        mHomeWatcher.startWatch();
         Toast.makeText(this,"要等到20秒後才能離開喔!!",Toast.LENGTH_LONG).show();
         try {
             Thread.sleep(5000);
@@ -98,7 +77,6 @@ public class CallActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-        mHomeWatcher.stopWatch();// 在onPause中停止监听，不然会报错的。
     }
 
 
