@@ -28,13 +28,11 @@
 
         </activity>
         <service android:name=".NickyService"/>
-        <activity android:name=".CallActivity">
+        <!--<activity android:name=".CallActivity">-->
 
-        </activity>
-        <activity android:name=".CallActivity2">
-
-
-        </activity>
+        <!--</activity>-->
+        <!--<activity android:name=".CallActivity2">-->
+        <!--</activity>-->
 
 
 
